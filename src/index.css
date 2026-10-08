@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #0a0a0a;
+  color: #e5e5e5;
+  overflow-x: hidden;
+}
+
+/* Basit Glitch Efekti Sınıfı */
+.glitch-active {
+  animation: glitch-skew 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both infinite;
+}
+
+@keyframes glitch-skew {
+  0% { transform: skew(0deg); }
+  20% { transform: skew(-10deg); filter: drop-shadow(2px 0px #00f0ff) drop-shadow(-2px 0px #00ff41); }
+  40% { transform: skew(10deg); filter: none; }
+  60% { transform: skew(-5deg); filter: drop-shadow(-2px 0px #00f0ff) drop-shadow(2px 0px #00ff41); }
+  80% { transform: skew(5deg); filter: none; }
+  100% { transform: skew(0deg); }
+}
