@@ -37,9 +37,8 @@ body {
 }
 
 /* Rage Mode Titreme Efekti (Easter Egg) */
-.rage-mode {
+.shake-screen {
   animation: rage-shake 0.3s infinite;
-  filter: invert(1) hue-rotate(180deg);
 }
 @keyframes rage-shake {
   0% { transform: translate(2px, 1px) rotate(0deg); }
